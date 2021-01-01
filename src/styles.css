@@ -1,0 +1,112 @@
+/* html, body {
+    height: 100vh !important;
+    width: 100vw;
+} */
+body {
+    background: linear-gradient(312deg, #b3b3b3, transparent);
+    background-attachment:fixed;
+}
+.calendar-screen {
+	display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+.rbc-calendar {
+	height: 100%;
+}
+.rbc-toolbar {
+    background: #fafafa;
+    padding: 8px;
+}
+/* Login */
+.row {
+    justify-content: space-evenly;
+}
+.col-md-4.login-form-1,
+.col-md-4.login-form-2
+{
+    margin: 1rem;
+}
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+}
+/* DateTimePicker */
+.react-datetime-picker input:focus{
+    outline: none;
+}
+.react-datetime-picker__wrapper{
+    border: 0px solid gray !important;
+}
+/* Plus flotante */
+.fab {
+    border-radius: 100%;
+    bottom: 25px;
+    font-size: 30px;
+    padding: 25px;
+    position: fixed;
+    right: 25px;
+}
+/* Borrar */
+.fab-danger {
+    bottom: 25px;
+    padding: 10px;
+    position: fixed;
+    left: 25px;
+}
+/* Barra de Ménu */
+.bg-dark {
+    background-color: rgb(55 68 76) !important;
+}
+/* Pantalla de carga */
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #8f8f8f;
+}
+.loading-screen i {
+    font-size: 12rem;
+    margin-bottom: 1rem;
+}
+.animate__animated.animate__flash {
+	--animate-duration: 2s;
+}
